@@ -25,11 +25,11 @@ public class NumberWizards : MonoBehaviour
 		
 		print ("The Highest Number You Can Pick is " + max);
 		print ("The Lowest Number You Can Pick is " + min);
-
-		max = max + 1;
 		
 		print ("Is the Number Higher or Lower Than " + guess + "?");
 		print ("Up Arrow for Higher, Down Arrow for Lower, Return for Equal");
+
+		max = max + 1;
 	}
 	
 	// Update is called once per frame
@@ -51,7 +51,7 @@ public class NumberWizards : MonoBehaviour
 		else if (Input.GetKeyDown(KeyCode.Return))
 		{
 			print ("I won!");
-			StartGame();
+			Start();
 		}
 	}
 
